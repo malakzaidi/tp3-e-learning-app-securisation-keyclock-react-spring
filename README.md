@@ -187,5 +187,5 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
 - React pour le frontend
 - OAuth2 / OpenID Connect pour la sécurité
 
-## Auteurs
+## Auteur
 - Malak Zaidi 
