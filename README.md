@@ -85,7 +85,7 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
   <img width="1644" height="952" alt="image" src="https://github.com/user-attachments/assets/69e8efbb-7f27-469f-be3b-75def919c596" />
   ## Student
 -  Test endpoint me en tant qu'étudiant avec l acesss token:
-   img width="1698" height="956" alt="Screenshot 2025-12-11 011923" src="https://github.com/user-attachments/assets/8135bd25-2fd1-480a-8eb6-61c3db6b26ac" />
+   <img width="1698" height="956" alt="Screenshot 2025-12-11 011923" src="https://github.com/user-attachments/assets/8135bd25-2fd1-480a-8eb6-61c3db6b26ac" />
 -  Test de l'endpoint api/courses par l'étudiant:
    <img width="1691" height="947" alt="Screenshot 2025-12-11 013642" src="https://github.com/user-attachments/assets/c9c443c7-c788-4dd4-8d92-7d900f4624e8" />
 -  Test via Postman (Token STUDENT - Accès Interdit) :
@@ -116,22 +116,27 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
 7. Ajouter un bouton Logout (redirection Keycloak).
 
 ### Captures d’Écran pour la Partie 3
-- Création de l’App React :
-  ![Screenshot - Création App React](path/to/screenshot-part3-app-creation.png)
+- Création de l’App React 
+- Keycloak démarré avec docker :
+  <img width="1721" height="782" alt="image" src="https://github.com/user-attachments/assets/81063485-59cb-40f5-85ba-13c4385409d1" />
 - Installation de keycloak-js :
-  ![Screenshot - Installation keycloak-js](path/to/screenshot-part3-install.png)
-- Initialisation OIDC :
-  ![Screenshot - Initialisation OIDC](path/to/screenshot-part3-oidc-init.png)
+ <img width="1685" height="355" alt="image" src="https://github.com/user-attachments/assets/f9145837-a801-4548-b195-ad92100964ea" />
 - Récupération des Informations Utilisateur :
-  ![Screenshot - Userinfo](path/to/screenshot-part3-userinfo.png)
-- Récupération des Rôles via /me :
-  ![Screenshot - Rôles via /me](path/to/screenshot-part3-roles.png)
+  <img width="491" height="457" alt="image" src="https://github.com/user-attachments/assets/18136414-b761-45c5-9ebd-1b60b552bb60" />
+  <img width="1889" height="1049" alt="image" src="https://github.com/user-attachments/assets/5053b941-c4e6-485e-b60f-85c4fcd6fdcb" />
 - Interface Protégée (Section Cours) :
-  ![Screenshot - Section Cours](path/to/screenshot-part3-cours-section.png)
+ <img width="1891" height="1055" alt="image" src="https://github.com/user-attachments/assets/2a85a751-2830-4027-b52d-37fde09573de" />
+- ## Note : interface de gestion consacré seulement à l'administrateur
 - Interface Protégée (Section Gestion) :
-  ![Screenshot - Section Gestion](path/to/screenshot-part3-gestion-section.png)
+ <img width="1873" height="1041" alt="image" src="https://github.com/user-attachments/assets/3fbb0744-c45b-4195-9acf-3e5f255e84f0" />
+<img width="1916" height="970" alt="image" src="https://github.com/user-attachments/assets/5c1d1ec7-7d88-4db7-9919-b2ab25401f23" />
+<img width="1819" height="817" alt="image" src="https://github.com/user-attachments/assets/5f9024fb-1d09-4822-87a3-952c38de4502" />
+
 - Bouton Logout :
-  ![Screenshot - Bouton Logout](path/to/screenshot-part3-logout.png)
+ <img width="1863" height="874" alt="image" src="https://github.com/user-attachments/assets/be7462fb-3ee8-41fa-a787-8dbb348faf66" />
+- Déconnexion: 
+<img width="1885" height="1030" alt="image" src="https://github.com/user-attachments/assets/3e07d2c2-a237-44ac-a5e3-4d534e85681d" />
+
 
 ## PARTIE 4 — Communication Sécurisée React → Spring Boot
 
