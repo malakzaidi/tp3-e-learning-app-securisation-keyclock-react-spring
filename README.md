@@ -3,31 +3,99 @@
 
 <img width="1901" height="1014" alt="Screenshot 2025-12-11 145501" src="https://github.com/user-attachments/assets/219f9e00-2a6f-41e1-9e95-567747de5da3" />
 
-
-
 ## Objectif Général
 Mettre en place une authentification moderne basée sur OAuth2 + OIDC dans une architecture composée de :
 - Un serveur d’identité : Keycloak
 - Un backend API : Spring Boot
 - Un frontend SPA : React
-
 L’objectif est de créer une plateforme E-Learning sécurisée où :
 - Les STUDENT peuvent consulter les cours
 - Les ADMIN peuvent gérer les cours
-
 ## Contexte du Projet
 L’université déploie une nouvelle plateforme e-learning. La sécurité, la gestion centralisée des utilisateurs et le Single Sign-On sont des exigences essentielles.
 
-Votre mission consiste à :
+La  mission consiste à :
 - Configurer Keycloak
 - Sécuriser Spring Boot avec OAuth2 Resource Server
 - Intégrer React avec OIDC via keycloak-js
 - Gérer les rôles et les accès aux différentes sections de l’application
 
-## Schéma d’Architecture
-Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boot) :
+## Structure du projet 
+# Structure du Projet Spring Boot avec Base de Données
 
-<img width="944" height="623" alt="image" src="https://github.com/user-attachments/assets/5e06096f-a871-4805-8aff-5c9fad0c1ef6" />
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── example/
+│   │           └── elearning/
+│   │               ├── ElearningApplication.java
+│   │               ├── config/
+│   │               │   └── SecurityConfig.java
+│   │               ├── controller/
+│   │               │   └── CourseController.java
+│   │               ├── entity/
+│   │               │   └── Course.java
+│   │               ├── repository/
+│   │               │   └── CourseRepository.java
+│   │               └── service/
+│   │                   └── CourseService.java
+│   └── resources/
+│       ├── application.properties
+│       └── data.sql (optionnel)
+└── test/
+    └── java/
+        └── com/
+            └── example/
+                └── elearning/
+                    └── ElearningApplicationTests.java
+```
+
+## Étapes d'installation
+
+### 1. Mettre à jour pom.xml
+Ajoutez les dépendances pour JPA, H2/MySQL/PostgreSQL et Lombok.
+
+### 2. Configurer application.properties
+Choisissez votre base de données (H2 pour dev, MySQL/PostgreSQL pour prod).
+
+### 3. Créer les packages et classes
+- **entity** : Entités JPA (Course)
+- **repository** : Interfaces Repository (CourseRepository)
+- **service** : Logique métier (CourseService)
+- **controller** : Endpoints REST (CourseController)
+- **config** : Configuration de sécurité (SecurityConfig)
+
+### 4. Tester l'application
+
+#### Avec H2 Console
+1. Démarrez l'application
+2. Accédez à http://localhost:8081/h2-console
+3. Utilisez les paramètres :
+   - JDBC URL: `jdbc:h2:mem:elearningdb`
+   - Username: `sa`
+   - Password: (laisser vide)
+
+#### Avec Postman
+1. Obtenez un token depuis Keycloak
+2. Testez les endpoints :
+   - GET `/api/courses` (STUDENT ou ADMIN)
+   - POST `/api/courses` (ADMIN uniquement)
+   - PUT `/api/courses/{id}` (ADMIN uniquement)
+   - DELETE `/api/courses/{id}` (ADMIN uniquement)
+
+## Avantages de cette architecture
+
+✅ Séparation des responsabilités (Entity, Repository, Service, Controller)
+✅ Validation automatique des données avec `@Valid`
+✅ Gestion des transactions avec `@Transactional`
+✅ Sécurité par rôle avec OAuth2
+✅ Facilité de migration entre bases de données
+✅ Données initiales avec data.sql
+✅ Support CORS pour React
+
+
 
 
 ## PARTIE 1 — Configuration du Serveur d’Identité Keycloak
