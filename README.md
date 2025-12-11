@@ -149,32 +149,6 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
    - 403 → rôle insuffisant
 4. Mettre en place une redirection vers Keycloak en cas d’expiration de session.
 
-### Captures d’Écran pour la Partie 4
-- Envoi du Token dans les Appels API :
-  ![Screenshot - Envoi Token](path/to/screenshot-part4-token-send.png)
-- Récupération Liste des Cours :
-  ![Screenshot - GET Courses](path/to/screenshot-part4-get-courses.png)
-- Ajout d’un Cours (POST) :
-  ![Screenshot - POST Courses](path/to/screenshot-part4-post-courses.png)
-- Gestion des Erreurs (401/403) :
-  ![Screenshot - Erreurs 401-403](path/to/screenshot-part4-errors.png)
-- Redirection en Cas d’Expiration :
-  ![Screenshot - Redirection Expiration](path/to/screenshot-part4-redirection.png)
-
-## PARTIE 5 — Livrable et Rapport
-
-1. Schéma d’architecture (inclus ci-dessus).
-2. Captures d’écran :
-   - Connexion réussie :
-     ![Screenshot - Connexion Réussie](path/to/screenshot-part5-connexion.png)
-   - Informations du profil :
-     ![Screenshot - Informations Profil](path/to/screenshot-part5-profil.png)
-   - Rôles affichés dans React :
-     ![Screenshot - Rôles dans React](path/to/screenshot-part5-roles-react.png)
-   - Appels API autorisés / interdits :
-     ![Screenshot - Appels API Autorises](path/to/screenshot-part5-api-autorises.png)
-     ![Screenshot - Appels API Interdits](path/to/screenshot-part5-api-interdits.png)
-
 ## Instructions d’Installation et d’Exécution
 1. **Keycloak** : Téléchargez et lancez Keycloak, configurez le Realm comme décrit.
 2. **Backend Spring Boot** : Clonez le repo, lancez avec `mvn spring-boot:run`.
