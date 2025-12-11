@@ -23,9 +23,8 @@ Votre mission consiste à :
 ## Schéma d’Architecture
 Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boot) :
 
-[Insérez ici un schéma d'architecture, par exemple via Draw.io ou un outil similaire]
+<img width="944" height="623" alt="image" src="https://github.com/user-attachments/assets/5e06096f-a871-4805-8aff-5c9fad0c1ef6" />
 
-![Schéma d'architecture](path/to/architecture-schema.png)
 
 ## PARTIE 1 — Configuration du Serveur d’Identité Keycloak
 
@@ -138,7 +137,7 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
 <img width="1885" height="1030" alt="image" src="https://github.com/user-attachments/assets/3e07d2c2-a237-44ac-a5e3-4d534e85681d" />
 
 
-## PARTIE 4 — Communication Sécurisée React → Spring Boot
+## PARTIE 4 — Communication Sécurisée React → Spring Boot: - Déjà implémenté
 
 1. Dans chaque appel API, envoyer le token : `Authorization: Bearer <access_token>`
 2. Récupérer depuis React :
@@ -149,6 +148,7 @@ Voici un schéma simplifié de l'architecture (Keycloak ↔ React ↔ Spring Boo
    - 403 → rôle insuffisant
 4. Mettre en place une redirection vers Keycloak en cas d’expiration de session.
 
+  
 ## Instructions d’Installation et d’Exécution
 1. **Keycloak** : Téléchargez et lancez Keycloak, configurez le Realm comme décrit.
 2. **Backend Spring Boot** : Clonez le repo, lancez avec `mvn spring-boot:run`.
