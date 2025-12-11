@@ -87,19 +87,19 @@ Choisissez votre base de données (H2 pour dev, MySQL/PostgreSQL pour prod).
 
 ## Avantages de cette architecture
 
-✅ Séparation des responsabilités (Entity, Repository, Service, Controller)
+Séparation des responsabilités (Entity, Repository, Service, Controller)
 
-✅ Validation automatique des données avec `@Valid`
+Validation automatique des données avec `@Valid`
 
-✅ Gestion des transactions avec `@Transactional`
+Gestion des transactions avec `@Transactional`
 
-✅ Sécurité par rôle avec OAuth2
+Sécurité par rôle avec OAuth2
 
-✅ Facilité de migration entre bases de données
+Facilité de migration entre bases de données
 
-✅ Données initiales avec data.sql
+Données initiales avec data.sql
 
-✅ Support CORS pour React
+Support CORS pour React
 
 
 
