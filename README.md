@@ -1,5 +1,9 @@
 # Sécurisation d’une Application E-Learning avec OAuth2 / OpenID Connect (Keycloak + React + Spring Boot)
+<img width="1147" height="799" alt="image" src="https://github.com/user-attachments/assets/8dba9067-e885-421a-8ed9-28994a620b91" />
+
 <img width="1901" height="1014" alt="Screenshot 2025-12-11 145501" src="https://github.com/user-attachments/assets/219f9e00-2a6f-41e1-9e95-567747de5da3" />
+
+
 
 ## Objectif Général
 Mettre en place une authentification moderne basée sur OAuth2 + OIDC dans une architecture composée de :
